@@ -20,7 +20,6 @@
 
     padding-top:1em;
 
-
     @media #{$medium-up} {
       background:url(/wp-content/themes/grunterie/img/brand-bg.png) no-repeat;
       height:100%;
@@ -30,14 +29,11 @@
       line-height: 1;
 
       a {
-
-          font-family: 'Quattrocento';
-          font-size:.6em;
-          color: #fff;
-          font-style: italic;
-          @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
-
-
+        font-family: 'Quattrocento';
+        font-size:.6em;
+        color: #fff;
+        font-style: italic;
+        @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
       }
 
     }
@@ -49,4 +45,11 @@
   border-top: 1px solid #357C55;
 }
 
+#content {
+  @media #{$medium-up} {
+    padding:0;
+    background-color:transparent;
+    border:0;
+  }
+}
 

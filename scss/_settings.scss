@@ -3,6 +3,13 @@
 // Licensed under MIT Open Source
 
 //
+// UTHSC SETTINGS
+//
+
+$uthsc-green: #006b4e;
+$uthsc-green-dark: scale-color($uthsc-green, $lightness: -20%);
+
+//
 // FOUNDATION SETTINGS
 //
 
@@ -1168,7 +1175,7 @@ $body-font-family: 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial,
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: $uthsc-green-dark;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

@@ -39,6 +39,14 @@
 
 <body <?php body_class('antialiased'); ?>>
 
+<section id="banner">
+    <div class="row">
+        <div id="brand" class="columns">
+            <img src="/wp-content/themes/grunterie/img/uthsc-wordmark.png" alt="UTHSC wordmark">
+        </div>
+    </div>
+</section>
+
 <header class="contain-to-grid">
 	<!-- Starting the Top-Bar -->
 	<nav class="top-bar" data-topbar>
@@ -66,8 +74,7 @@
 	    ?>
 	    <?php
 	    	// Uncomment the following to enable the right menu (additional menu)
-			
-	    	/*
+
 	        wp_nav_menu( array(
 	            'theme_location' => 'additional',
 	            'container' => false,
@@ -79,7 +86,7 @@
 	                'menu_type' => 'main-menu'
 	            ) ),
 	        ) );
-	        */
+
 	    ?>
 	    </section>
 	</nav>

@@ -43,7 +43,10 @@
     <div class="row">
         <div id="brand" class="columns">
             <img src="/wp-content/themes/grunterie/img/uthsc-wordmark.png" alt="UTHSC wordmark">
+            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         </div>
+
+
     </div>
 </section>
 
@@ -52,7 +55,7 @@
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
 	        <li class="name">
-	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+
 	        </li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -72,6 +75,7 @@
 	            ) ),
 	        ) );
 	    ?>
+
 	    <?php
 	    	// Uncomment the following to enable the right menu (additional menu)
 

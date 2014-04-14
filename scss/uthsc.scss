@@ -1,7 +1,6 @@
 @import "compass";
-
-$uthsc-green: #006b4e;
-$uthsc-green-dark: scale-color($uthsc-green, $lightness: -30%);
+@import "settings";
+@import "foundation";
 
 #banner {
 
@@ -9,21 +8,45 @@ $uthsc-green-dark: scale-color($uthsc-green, $lightness: -30%);
   border-bottom: 1px solid #0b2317;
 
   .row {
-    height:7em;
-    background:url(http://lorempixel.com/g/1140/200/) no-repeat;
-    background-position: center right;
+
+    @media #{$medium-up} {
+      max-height:7em;
+      background:url(/wp-content/themes/grunterie/img/uthsc-banner.jpg) no-repeat;
+      background-position: center right;
+    }
   }
 
   #brand {
-    background:url(/wp-content/themes/grunterie/img/brand-bg.png) no-repeat;
+
     padding-top:1em;
-    height:100%;
+
+
+    @media #{$medium-up} {
+      background:url(/wp-content/themes/grunterie/img/brand-bg.png) no-repeat;
+      height:100%;
+    }
+
+    h1 {
+      line-height: 1;
+
+      a {
+
+          font-family: 'Quattrocento';
+          font-size:.6em;
+          color: #fff;
+          font-style: italic;
+          @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
+
+
+      }
+
+    }
   }
 
 }
 
-  .contain-to-grid {
-    border-top: 1px solid #3F8A60;
-  }
+.contain-to-grid {
+  border-top: 1px solid #357C55;
+}
 
 

@@ -35,10 +35,8 @@
         font-style: italic;
         @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
       }
-
     }
   }
-
 }
 
 .contain-to-grid {
@@ -66,6 +64,5 @@ footer {
     a {
       color:#fff;
     }
-
   }
 }

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#Grunterie
+#THE UTHSC Blogs Theme is Built on Grunterie
 
 Grunterie is a WordPress theme based on [Reverie](http://themefortress.com/reverie/), a "versatile HTML5 responsive WordPress framework based on [ZURB's Foundation](http://foundation.zurb.com/)." Reverie is set up to use the Compass gem so, if you use [Compass](http://compass-style.org/) or you want a theme that's ready-to-go, use Reverie.  
 If you're in to [Grunt](http://gruntjs.com/) and want to stay on the cutting edge, here are some things that are great about Grunterie.
@@ -22,6 +21,7 @@ You'll need to have the following items installed before continuing.
 
 ```bash
 git clone https://github.com/gpspake/grunterie.git
+cd grunterie
 npm install && bower install
 ```
 
@@ -36,10 +36,3 @@ And you're set!
   * `scss/_settings.scss`: Foundation configuration settings go in here
   * `scss/app.scss`: Application styles go here (Probably no need to mess with this.)
   * `scss/style.scss`: Theme styles go here (Copied from Reverie with Compass stuff commented out.)
-
-=======
-uthscblogs
-==========
-
-A WordPress Theme for UTHSC
->>>>>>> origin/master

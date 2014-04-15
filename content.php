@@ -16,7 +16,7 @@
 		<div class="row">
             <div class="medium-3 hide-for-small columns"><figure class="th"><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></a></figure></div>
             <div class="medium-9 columns"><?php the_excerpt(); ?></div>
-
         </div>
-	</div>
+        <p class="entry-tags"><?php the_tags(); ?></p>
+    </div>
 </article>

@@ -13,6 +13,10 @@
 		<?php reverie_entry_meta(); ?>
 	</header>
 	<div class="entry-content">
-		<figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></a></figure> <?php the_excerpt(); ?>
+		<div class="row">
+            <div class="medium-3 hide-for-small columns"><figure class="th"><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></a></figure></div>
+            <div class="medium-9 columns"><?php the_excerpt(); ?></div>
+
+        </div>
 	</div>
 </article>

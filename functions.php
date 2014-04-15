@@ -109,4 +109,16 @@ if ( ! function_exists( 'reverie_entry_meta' ) ) {
         echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. get_the_time('F jS, Y') .'</time>';
     }
 };
-?>
+
+/**
+ * UTHSC Functions.
+ */
+function custom_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+    return '&hellip;&nbsp;<a class="read-more" href="'. get_permalink( get_the_ID() ) . '"><strong>' . __('Read&nbsp;More', 'uthsc') . '</strong></a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );

@@ -40,21 +40,19 @@
 <body <?php body_class('antialiased'); ?>>
 
 <section id="banner">
-    <div class="row">
+    <div class="row brand-text">
         <div id="brand" class="columns">
             <img src="/wp-content/themes/uthscblogs/img/uthsc-wordmark.png" alt="UTHSC wordmark">
             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         </div>
-
-
     </div>
-    <div class="row show-for-small">
+
+    <div class="row show-for-small search-form">
         <div class="columns">
             <?php get_search_form() ?>
         </div>
-
-
     </div>
+
 </section>
 
 <header class="contain-to-grid">

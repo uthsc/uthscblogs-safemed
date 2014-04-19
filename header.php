@@ -48,6 +48,13 @@
 
 
     </div>
+    <div class="row show-for-small">
+        <div class="columns">
+            <?php get_search_form() ?>
+        </div>
+
+
+    </div>
 </section>
 
 <header class="contain-to-grid">
@@ -79,7 +86,7 @@
 	    <?php
 	    	// Uncomment the following to enable the right menu (additional menu)
 
-	        wp_nav_menu( array(
+	        /*wp_nav_menu( array(
 	            'theme_location' => 'additional',
 	            'container' => false,
 	            'depth' => 0,
@@ -89,7 +96,8 @@
 	                'item_type' => 'li',
 	                'menu_type' => 'main-menu'
 	            ) ),
-	        ) );
+	        )
+            );*/
 
 	    ?>
 	    </section>

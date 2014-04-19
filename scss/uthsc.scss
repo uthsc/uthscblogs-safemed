@@ -1,11 +1,10 @@
 @import "compass";
-@import "settings";
-@import "foundation";
+@import "app";
+@import "style";
+
+body {
 
 #banner {
-
-
-
   @include background-image(linear-gradient($uthsc-green,$uthsc-green-dark));
   border-bottom: 1px solid #000;
 
@@ -44,16 +43,36 @@
     }
   }
 
+  @media #{$small-only} {
+    .brand-text{
+      border-bottom:1px solid #000;
+    }
+    .search-form {
+      border-top: 1px solid $uthsc-green-light;
+      padding-top: .8em;
 
+      #s {
+        margin: 0 0 .8rem 0;
+      }
+    }
+  }
 
 }
 
-.contain-to-grid {
-  border-top: 1px solid $uthsc-green-light;
+header {
+  &.contain-to-grid {
+    border-top: 1px solid $uthsc-green-light;
+
+    @media #{$medium-only} {
+      margin-bottom:0;
+    }
+  }
+
 }
+
 
 #content {
-  @media #{$medium-up} {
+  @media #{$large-up} {
     padding:0;
     background-color:transparent;
     border:0;
@@ -64,6 +83,7 @@
   background-color: $uthsc-green-dark;
   border-bottom: 1px solid #000;
 }
+
 footer {
   &.full-width {
     border-top: 1px solid $uthsc-green-light;
@@ -89,4 +109,6 @@ figure {
 
 .index-card {
   padding-bottom: 0;
+}
+
 }

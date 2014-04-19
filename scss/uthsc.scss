@@ -66,16 +66,28 @@ header {
     @media #{$medium-only} {
       margin-bottom:0;
     }
+    @media #{$small-only} {
+      margin-bottom:0;
+    }
   }
 
 }
 
+.content-area {
+  padding:1em;
+  @media #{$xlarge-up} {
+    padding:0;
+  }
+}
+
 
 #content {
+
+  padding:0;
+  background-color:transparent;
+  border:0;
   @media #{$large-up} {
-    padding:0;
-    background-color:transparent;
-    border:0;
+
   }
 }
 

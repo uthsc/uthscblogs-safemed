@@ -47,12 +47,12 @@
         </div>
     </div>
 
-    <div class="row show-for-small search-form">
+<!--    <div class="row hide-for-large-up search-form">
         <div class="columns">
-            <?php get_search_form() ?>
+            <?php /*get_search_form() */?>
         </div>
     </div>
-
+-->
 </section>
 
 <header class="contain-to-grid">
@@ -60,6 +60,12 @@
 	<nav class="top-bar" data-topbar>
 	    <ul class="title-area">
 	        <li class="name">
+
+                <div class="row hide-for-large-up search-form">
+                    <div class="small-9 medium-5 columns">
+                        <?php get_search_form() ?>
+                    </div>
+                </div>
 
 	        </li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -99,6 +105,9 @@
 
 	    ?>
 	    </section>
+        <section class="top-bar-section right show-for-large-up">
+                <?php get_search_form() ?>
+        </section>
 	</nav>
 	<!-- End of Top-Bar -->
 </header>

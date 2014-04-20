@@ -12,7 +12,7 @@
         ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php if ($paged < 2) { ?>
-        <ul class="example-orbit" data-orbit>
+        <ul class="example-orbit hide-for-small-down" data-orbit>
             <li>
                 <img src="http://lorempixel.com/800/250/city/" alt="slide 1" />
                 <div class="orbit-caption">

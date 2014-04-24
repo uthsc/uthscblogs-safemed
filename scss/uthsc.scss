@@ -112,6 +112,19 @@ footer {
   }
 }
 
+#sidebar, .footer-widget {
+  .panel {
+    a {
+      color: #222;
+    }
+  }
+  .widget {
+    h4 {
+      color: $uthsc-green;
+    }
+  }
+}
+
 figure {
   margin: 0;
 

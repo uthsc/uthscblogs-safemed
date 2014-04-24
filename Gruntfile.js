@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'expanded'
         },
         files: {
           'css/app.css': 'scss/app.scss',
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     compass: {                  // Task
       dist: {                   // Target
           options: {              // Target options
-              outputStyle: 'compressed',
+              outputStyle: 'expanded',
               sassDir: 'scss',
               cssDir: 'css'
           }

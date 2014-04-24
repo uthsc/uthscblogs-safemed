@@ -15,10 +15,13 @@ if( ! function_exists( 'reverie_enqueue_style' ) ) {
         // Register the uthsc stylesheet
         wp_register_style( 'uthsc-stylesheet', get_template_directory_uri() . '/css/uthsc.css', array(), '', 'all' );
 
+        // Register the uthsc stylesheet
+        wp_register_style( 'ie-stylesheet', get_template_directory_uri() . '/css/ie.css', array(), '', 'all' );
+
 		wp_enqueue_style( 'reverie-foundation-stylesheet' );
 		wp_enqueue_style( 'reverie-stylesheet' );
         wp_enqueue_style( 'uthsc-stylesheet' );
-
+        wp_enqueue_style( 'ie-stylesheet' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'reverie_enqueue_style' );

@@ -68,7 +68,7 @@ header {
     border-top: 1px solid $uthsc-green-light;
 
     .search-form .columns {
-      margin-top: .4em;
+      margin-top: .3em;
     }
 
     @media #{$medium-only} {
@@ -79,6 +79,23 @@ header {
     }
   }
 
+}
+
+.tab-bar {
+  border-top: 1px solid $uthsc-green-light;
+  border-bottom: 1px solid $uthsc-green-light;
+  section.left-small {
+    border-right:0;
+  }
+
+  #searchform{
+    margin-top: .4em;
+
+    input{
+      height:2em;
+    }
+
+  }
 }
 
 .content-area {
@@ -146,9 +163,10 @@ figure {
  *Admin bar fix
  *
  */
+/*
 #wpadminbar {
 
   @media only screen and (max-width: 600px) {
     margin-top:-46px;
   }
-}
+}*/

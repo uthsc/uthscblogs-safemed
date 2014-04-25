@@ -668,7 +668,7 @@ $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
 
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: #333;
+$tabbar-bg: $uthsc-green-dark;
 // $tabbar-height: rem-calc(45);
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: #fff;
@@ -686,7 +686,7 @@ $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
 
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
-// $off-canvas-bg: #333;
+$off-canvas-bg: $uthsc-green-dark;
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);

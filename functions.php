@@ -63,7 +63,8 @@ if( ! function_exists( 'reverie_theme_support' ) ) {
         register_nav_menus(array(
             'primary' => __('Primary Navigation', 'reverie'),
             'additional' => __('Additional Navigation', 'reverie'),
-            'utility' => __('Utility Navigation', 'reverie')
+            'utility' => __('Utility Navigation', 'reverie'),
+            'off-canvas' => __('Off Canvas Navigation', 'reverie')
         ));
 
         // Add custom background support

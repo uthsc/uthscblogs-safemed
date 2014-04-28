@@ -58,7 +58,7 @@
                 <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
             </section>
 
-            <section class="right tap-bar-section right ">
+            <section class="right tab-bar-section right ">
                 <?php get_search_form() ?>
             </section>
         </nav>

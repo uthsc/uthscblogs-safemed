@@ -67,8 +67,11 @@ header {
   &.contain-to-grid {
     border-top: 1px solid $uthsc-green-light;
 
-    .search-form .columns {
-      margin-top: .3em;
+    #searchform {
+      margin-right:1em;
+      @media only screen and (min-width: 1160px) {
+        margin-right:0em;
+      }
     }
 
     @media #{$medium-only} {
@@ -90,7 +93,7 @@ header {
 
   #searchform{
     margin-top: .4em;
-    padding-right: .5em;
+    margin-right: 1em;
 
     input{
       height:2em;
@@ -100,7 +103,7 @@ header {
 
 div.content-area {
   padding:1em;
-  @media #{$xlarge-up} {
+  @media only screen and (min-width: 1160px) {
     padding:0;
     margin-top:1em;
   }

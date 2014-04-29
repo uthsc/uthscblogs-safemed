@@ -34,7 +34,6 @@
     <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
 
     <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class('antialiased'); ?>>
@@ -46,10 +45,7 @@
             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         </div>
     </div>
-
 </section>
-
-
 
 <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
@@ -78,14 +74,7 @@
                     ) ),
             ) );
             ?>
-
-            <!--<ul class="off-canvas-list">
-                <li><label>Foundation</label></li>
-                <li><a href="#">The Psychohistorians</a></li>
-                <li><a href="#">...</a></li>
-            </ul>-->
         </aside>
-
 
         <section class="main-section">
 
@@ -128,7 +117,6 @@
                 </nav>
                 <!-- End of Top-Bar -->
             </header>
-
 
             <!-- Start the main container -->
             <div class="container" role="document">

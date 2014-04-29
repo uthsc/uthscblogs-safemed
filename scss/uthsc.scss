@@ -139,8 +139,14 @@ figure {
   }
 }
 
-.index-card {
-  padding-bottom: 0;
+article {
+  h1.entry-title {
+    font-size: 2em;
+  }
+
+  .index-card {
+    padding-bottom: 0;
+  }
 }
 
 }

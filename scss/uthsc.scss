@@ -140,13 +140,25 @@ figure {
 }
 
 article {
-  h1.entry-title {
-    font-size: 2em;
-  }
+
 
   &.index-card {
     padding-bottom: 0;
   }
+
+  header{
+    h2, h1.entry-title {
+      font-size: 1.5em;
+
+      @media #{$medium-up} {
+        font-size: 2em;
+      }
+    }
+
+
+  }
+
+
 }
 
 }

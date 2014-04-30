@@ -175,10 +175,10 @@ article {
  *Admin bar fix
  *
  */
-/*
+
 #wpadminbar {
 
   @media only screen and (max-width: 600px) {
-    margin-top:-46px;
+    position:fixed;
   }
-}*/
+}

@@ -41,7 +41,7 @@
 <section id="banner">
     <div class="row brand-text">
         <div id="brand" class="columns">
-            <img src="/wp-content/themes/uthscblogs/img/uthsc-wordmark.png" alt="UTHSC wordmark">
+            <img src="/wp-content/themes/uthscblogs/img/uthsc-wordmark.svg" alt="UTHSC Wordmark">
             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         </div>
     </div>

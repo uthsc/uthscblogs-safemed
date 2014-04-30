@@ -151,13 +151,11 @@ figure {
 }
 
 article {
-
-
   &.index-card {
     padding-bottom: 0;
   }
 
-  header{
+  header {
     h2, h1.entry-title {
       font-size: 1.5em;
 
@@ -165,11 +163,7 @@ article {
         font-size: 2em;
       }
     }
-
-
   }
-
-
 }
 
 }

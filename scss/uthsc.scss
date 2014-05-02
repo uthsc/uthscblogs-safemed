@@ -132,7 +132,10 @@ footer {
 #sidebar, .footer-widget {
   .panel {
     a {
-      color: #222;
+      color: $uthsc-green;
+      &:hover {
+        color: $uthsc-green-dark;
+      }
     }
   }
   .widget {

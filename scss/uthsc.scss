@@ -19,8 +19,8 @@ h1,h2,h3,h4,h5,h6{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helve
 
 #banner {
 
-  @include background-image(linear-gradient($uthsc-green,$uthsc-green-dark));
-  border-bottom: 1px solid #000;
+  @include background-image(linear-gradient($uthsc-green-dark 30%,$uthsc-green));
+  border-bottom: 1px solid $uthsc-green-dark;
 
   .brand-text {
     @media #{$medium-up} {
@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helve
     padding-top:1em;
 
     @media #{$medium-up} {
-      background:url(/wp-content/themes/uthscblogs/img/brand-bg.png) no-repeat;
+      background:url(/wp-content/themes/uthscblogs/img/banner-bg.png) no-repeat;
       height:100%;
     }
 
@@ -61,7 +61,12 @@ h1,h2,h3,h4,h5,h6{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helve
 }
 
 header {
+
+
+
   &.contain-to-grid {
+    //@include background-image(linear-gradient($uthsc-green 30%,$uthsc-green-dark 100%));
+    background:$uthsc-green;
     border-top: 1px solid $uthsc-green-light;
 
     #searchform {
@@ -80,7 +85,21 @@ header {
   }
 }
 
+.top-bar {
+  .top-bar-section {
+    ul {
+      background:transparent;
+
+
+
+    }
+  }
+}
+
 .tab-bar {
+
+  @include background-image(linear-gradient($uthsc-green 30%,$uthsc-green-dark 100%));
+
   border-top: 1px solid $uthsc-green-light;
   border-bottom: 1px solid $uthsc-green-light;
   section.left-small {
@@ -244,3 +263,6 @@ article {
     position:fixed;
   }
 }
+
+
+

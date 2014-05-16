@@ -62,8 +62,6 @@ h1,h2,h3,h4,h5,h6{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helve
 
 header {
 
-
-
   &.contain-to-grid {
     //@include background-image(linear-gradient($uthsc-green 30%,$uthsc-green-dark 100%));
     background:$uthsc-green;
@@ -252,10 +250,7 @@ article {
 
 }
 
-/**
- *Admin bar fix
- *
- */
+/* Admin bar fix */
 
 #wpadminbar {
 
@@ -263,6 +258,3 @@ article {
     position:fixed;
   }
 }
-
-
-

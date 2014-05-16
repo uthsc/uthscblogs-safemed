@@ -12,6 +12,7 @@
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<?php reverie_entry_meta(); ?>
 	</header>
+    <?php edit_post_link('Edit this Post'); ?>
 	<div class="entry-content">
 		<div class="row">
             <?php if ( has_post_thumbnail() ) { ?>

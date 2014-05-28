@@ -47,40 +47,11 @@
     </div>
 </section>
 
-<div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
-        <nav class="tab-bar hide-for-large-up contain-to-grid">
-            <section class="left-small">
-                <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-            </section>
 
-            <section class="right tab-bar-section right ">
-                <?php get_search_form() ?>
-            </section>
-        </nav>
-
-        <aside class="left-off-canvas-menu">
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'off-canvas',
-                'container' => false,
-                'depth' => 0,
-                'items_wrap' => '<ul class="off-canvas-list">%3$s</ul>',
-                'fallback_cb' => 'reverie_menu_fallback', // workaround to show a message to set up a menu
-                'walker' => new reverie_walker( array(
-                        'in_top_bar' => true,
-                        'item_type' => 'li',
-                        'menu_type' => 'main-menu'
-                    ) ),
-            ) );
-            ?>
-        </aside>
-
-        <section class="main-section">
-
-            <header class="contain-to-grid show-for-large-up sticky">
+            <header class="contain-to-grid sticky">
                 <!-- Starting the Top-Bar -->
-                <nav class="top-bar" data-topbar>
+                <nav class="top-bar" data-topbar data-options="scrolltop:false;">
                     <ul class="title-area">
                         <li class="name">
 

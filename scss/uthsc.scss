@@ -68,7 +68,13 @@ header {
     border-top: 1px solid $uthsc-green-light;
 
     #searchform {
-      margin-right:1em;
+
+      margin:.4em 1em 0 0;
+
+      @media #{$large} {
+        margin-top:0em;
+      }
+
       @media only screen and (min-width: 1160px) {
         margin-right:0em;
       }
@@ -86,15 +92,12 @@ header {
 .top-bar {
   .top-bar-section {
     ul {
-      background:transparent;
-
-
-
+      background:$uthsc-green;
     }
   }
 }
 
-.tab-bar {
+/*.tab-bar {
 
   @include background-image(linear-gradient($uthsc-green 30%,$uthsc-green-dark 100%));
 
@@ -112,7 +115,7 @@ header {
       height:2em;
     }
   }
-}
+}*/
 
 div.content-area {
   padding:1em;

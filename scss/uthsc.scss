@@ -93,9 +93,14 @@ header {
   .top-bar-section {
     ul {
       background:$uthsc-green;
+      li {
+        background:transparent;
+      }
     }
   }
 }
+
+
 
 /*.tab-bar {
 

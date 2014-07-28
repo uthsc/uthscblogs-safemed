@@ -175,12 +175,22 @@ footer {
   }
 
   .fs_icons {
+
+    display:block;
+    float:none;
+    width:250px;
+
     margin:0 auto;
-    display:inline-block;
+
     height:4em;
     text-align:center;
-    float: right;
+
     bottom:0;
+
+    @media #{$large-up} {
+      display:inline-block;
+      float: right;
+    }
 
     a {
       width:100%;
@@ -189,7 +199,7 @@ footer {
       padding:3px;
     }
 
-    .footer_social_facebook,.footer_social_twitter,.footer_social_linkedin,.footer_social_youtube {
+    .footer_social_facebook,.footer_social_twitter,.footer_social_linkedin,.footer_social_youtube,.footer_social_pinterest,.footer_social_instagram  {
       padding:3px;
       float:left;
       width:35px;
@@ -197,19 +207,28 @@ footer {
       margin-left: 3px;
     }
 
-    .footer_social_facebook {	background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/fb1.png') no-repeat left top; }
-    .footer_social_facebook:hover { background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/fb2.png') no-repeat left top; }
-
-    .footer_social_twitter { background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/t1.png') no-repeat left top; }
-    .footer_social_twitter:hover { background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/t2.png') no-repeat left top; }
-
-    .footer_social_linkedin { background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/li1.png') no-repeat left top; }
-    .footer_social_linkedin:hover {	background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/li2.png') no-repeat left top; }
-
-    .footer_social_youtube { background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/yt1.png') no-repeat left top; }
-    .footer_social_youtube:hover { background: url('http://news.uthsc.edu/wp-content/themes/uthsc/images/social/yt2.png') no-repeat left top; }
-
     .footer-widgets-1,.footer-widgets-2, .footer-widgets-3{ width: 100%; }
+
+
+    .footer_social_facebook {background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll 0 0 transparent;}
+    .footer_social_facebook:hover {background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll -35px 0 transparent;}
+
+    .footer_social_twitter {background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll 0 -35px transparent;}
+    .footer_social_twitter:hover {background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll -35px -35px transparent;}
+
+
+    .footer_social_linkedin {background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll 0 -70px transparent;}
+    .footer_social_linkedin:hover{background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll -35px -70px transparent;}
+
+
+    .footer_social_youtube{background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll 0 -105px transparent;}
+    .footer_social_youtube:hover{background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll -35px -105px transparent;}
+
+    .footer_social_instagram{background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll 0 -175px transparent;}
+    .footer_social_instagram:hover{background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll -35px -175px transparent;}
+
+    .footer_social_pinterest{background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll 0 -210px transparent;}
+    .footer_social_pinterest:hover{background: url("/wp-content/themes/uthscblogs/img/icon-sprite.png") no-repeat scroll -35px -210px transparent;}
   }
 }
 

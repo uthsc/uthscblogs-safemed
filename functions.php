@@ -123,3 +123,37 @@ function new_excerpt_more( $more ) {
     return '&hellip;&nbsp;<a class="read-more" href="'. get_permalink( get_the_ID() ) . '"><strong>' . __('Read&nbsp;More', 'uthsc') . '</strong></a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+//WPUFE Javascript
+function wpufe_javascript() {
+    if ( is_page('new-announcement') ) {
+        ?>
+        <script type="text/javascript">
+            (function($) {
+                function limitText(field, maxChar){
+                    var ref = $(field),
+                        val = ref.val();
+
+                    if ( val.length >= maxChar ) {
+                        ref.val(val.substr(0, maxChar));
+                    }
+                }
+                $( "label[for=wpuf-post_excerpt]" ).append( '<span class="announcement-excerpt-tooltip" style="display: none;"><span style="font-size:.9em;">The message that will appear in the campus emails. Make sure to include any details you want to appear in the email. <strong>Don\'t repeat the title here or it will appear twice!</strong></span></div>')
+
+                $('#post_excerpt').on('focus', function(event) {
+                    $( ".announcement-excerpt-tooltip" ).show("fast");
+                });
+                $('#post_excerpt').on('focusout', function(event) {
+                    $( '.announcement-excerpt-tooltip' ).hide("fast");
+                });
+                // Insert Limitations here
+                $('#post_excerpt').on('keyup', function(event) {
+                    limitText(this, 400);
+                    $( ".excerpt-char-count" ).html( 400 - $(this).val().length );
+                });
+            })(jQuery);
+        </script>
+    <?php
+    }
+}
+add_action( 'wp_footer', 'wpufe_javascript',20 );

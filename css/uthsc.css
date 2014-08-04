@@ -6333,3 +6333,11 @@ body h2, body h1.entry-title {
 .ie9 #banner {
   background: #006b4e;
 }
+
+.entry-content figure {
+  display: block;
+  max-width: 100%;
+}
+.entry-content figure figcaption {
+  width: 100%;
+}

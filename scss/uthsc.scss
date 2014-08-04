@@ -298,6 +298,15 @@ article {
 .ie9 {
   #banner {
     background:$uthsc-green;
+  }
+}
 
+//figcaption fix to prevent overflow in ff
+.entry-content figure {
+  display: block;
+  max-width: 100%;
+
+  figcaption {
+    width: 100%;
   }
 }

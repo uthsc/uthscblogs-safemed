@@ -6136,10 +6136,10 @@ body #banner #brand h1 {
   line-height: 1;
 }
 body #banner #brand h1 a {
-  font-family: 'Quattrocento';
+  font-family: 'Open Sans';
   font-size: .6em;
   color: #fff;
-  font-style: italic;
+  font-weight: 100;
   text-shadow: 2px 2px 2px #1b3328;
 }
 body header.contain-to-grid {

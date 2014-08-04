@@ -50,10 +50,11 @@ h1,h2,h3,h4,h5,h6{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helve
       line-height: 1;
 
       a {
-        font-family: 'Quattrocento';
+        font-family: 'Open Sans';
         font-size:.6em;
         color: #fff;
-        font-style: italic;
+        font-weight: 100;
+        //font-style: italic;
         @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
       }
     }
@@ -102,8 +103,6 @@ header {
     }
   }
 }
-
-
 
 /*.tab-bar {
 
@@ -293,5 +292,12 @@ article {
 
   @media only screen and (max-width: 600px) {
     position:fixed;
+  }
+}
+
+.ie9 {
+  #banner {
+    background:$uthsc-green;
+
   }
 }

@@ -1,15 +1,7 @@
 <?php get_header(); ?>
-
     <!-- Row for main content area -->
     <div class="small-12 large-8 columns" id="content" role="main">
 
-        <?php
-        /*
-         * This whole slider section needs to be moved out of this template.
-         *
-         */
-
-        ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php if ($paged < 2) { ?>
         <ul class="example-orbit hide-for-small-down" data-orbit>

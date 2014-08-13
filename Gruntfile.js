@@ -40,13 +40,13 @@ module.exports = function(grunt) {
     }
     },
 
-		copy: {
-		  main: {
-		    nonull: true,
-		    src: 'bower_components/foundation/js/foundation.min.js',
-		    dest: 'js/foundation.min.js'
-		  }
-		},
+	copy: {
+	  main: {
+	    nonull: true,
+	    src: 'bower_components/foundation/js/foundation.min.js',
+	    dest: 'js/foundation.min.js'
+	  }
+	},
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
@@ -65,5 +65,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   
   grunt.registerTask('build', ['uglify','copy']);
-  grunt.registerTask('default', ['build','compass','watch']);
+  grunt.registerTask('default', ['compass','watch']);
 }

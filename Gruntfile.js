@@ -18,9 +18,10 @@ module.exports = function(grunt) {
       }
     },
 
-    compass: {                  // Task
-      dist: {                   // Target
-          options: {              // Target options
+    compass: {
+      dist: {
+          options: {
+              importPath: 'bower_components/foundation/scss',
               outputStyle: 'expanded',
               sassDir: 'scss',
               cssDir: 'css'

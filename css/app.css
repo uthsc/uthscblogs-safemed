@@ -4827,10 +4827,10 @@ meta.foundation-mq-topbar {
   background: transparent;
 }
 .top-bar.expanded .toggle-topbar a {
-  color: #888888;
+  color: white;
 }
 .top-bar.expanded .toggle-topbar a::after {
-  box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+  box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
 }
 
 .top-bar-section {

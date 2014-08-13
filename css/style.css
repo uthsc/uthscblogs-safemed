@@ -3,7 +3,7 @@
  * Edit the file and have fun.
  * http://themefortress.com/reverie */
 meta.foundation-version {
-  font-family: "/5.2.3/";
+  font-family: "/5.3.3/";
 }
 
 meta.foundation-mq-small {
@@ -60,7 +60,7 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  line-height: 1;
+  line-height: 150%;
   position: relative;
   cursor: default;
 }
@@ -137,30 +137,36 @@ ul.pagination li {
   font-size: 0.875rem;
   margin-left: 0.3125rem;
 }
-ul.pagination li a {
+ul.pagination li a, ul.pagination li button {
   display: block;
   padding: 0.0625rem 0.625rem 0.0625rem;
   color: #999999;
+  background: none;
   border-radius: 3px;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: inherit;
+  transition: background-color 300ms ease-out;
 }
 ul.pagination li:hover a,
-ul.pagination li a:focus {
+ul.pagination li a:focus, ul.pagination li:hover button,
+ul.pagination li button:focus {
   background: #e6e6e6;
 }
-ul.pagination li.unavailable a {
+ul.pagination li.unavailable a, ul.pagination li.unavailable button {
   cursor: default;
   color: #999999;
 }
-ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
+ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable:hover button, ul.pagination li.unavailable button:focus {
   background: transparent;
 }
-ul.pagination li.current a {
+ul.pagination li.current a, ul.pagination li.current button {
   background: #008cba;
   color: white;
   font-weight: bold;
   cursor: default;
 }
-ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
   background: #008cba;
 }
 ul.pagination li {
@@ -317,30 +323,39 @@ time a:focus {
   font-size: 0.875rem;
   margin-left: 0.3125rem;
 }
-.page-numbers li a {
+.page-numbers li a, .page-numbers li button {
   display: block;
   padding: 0.0625rem 0.625rem 0.0625rem;
   color: #999999;
+  background: none;
   border-radius: 3px;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: inherit;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
 }
 .page-numbers li:hover a,
-.page-numbers li a:focus {
+.page-numbers li a:focus, .page-numbers li:hover button,
+.page-numbers li button:focus {
   background: #e6e6e6;
 }
-.page-numbers li.unavailable a {
+.page-numbers li.unavailable a, .page-numbers li.unavailable button {
   cursor: default;
   color: #999999;
 }
-.page-numbers li.unavailable:hover a, .page-numbers li.unavailable a:focus {
+.page-numbers li.unavailable:hover a, .page-numbers li.unavailable a:focus, .page-numbers li.unavailable:hover button, .page-numbers li.unavailable button:focus {
   background: transparent;
 }
-.page-numbers li.current a {
+.page-numbers li.current a, .page-numbers li.current button {
   background: #008cba;
   color: white;
   font-weight: bold;
   cursor: default;
 }
-.page-numbers li.current a:hover, .page-numbers li.current a:focus {
+.page-numbers li.current a:hover, .page-numbers li.current a:focus, .page-numbers li.current button:hover, .page-numbers li.current button:focus {
   background: #008cba;
 }
 .page-numbers li {

@@ -27,15 +27,52 @@ h1,h2,h3,h4,h5,h6{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helve
 
   .brand-text {
     @media #{$medium-up} {
-      max-height:7em;
+      height:80px;
       background:url(/wp-content/themes/uthscblogs/img/uthsc-banner.jpg) no-repeat;
       background-position: center right;
+    }
+  }
+
+  .seam {
+    border-bottom: 1px solid #004b37;
+    @media #{$medium-up} {
+
+    }
+
+  }
+
+  .site-title {
+
+    text-align:center;
+    border-top: 1px solid #007f5d;
+
+    @media #{$medium-up} {
+      text-align:left;
+      min-height: 45px;
+    }
+  }
+
+  h1 {
+    line-height: .5em;
+
+    a {
+      font-family: 'Open Sans';
+      font-size:.6em;
+      color: #fff;
+      font-weight: 100;
+      //font-style: italic;
+      @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
     }
   }
 
   #brand {
 
     padding-top:1em;
+
+
+    @media #{$large-up} {
+      padding-left:0;
+    }
 
     @media #{$medium-up} {
       background:url(/wp-content/themes/uthscblogs/img/banner-bg.png) no-repeat;
@@ -44,24 +81,13 @@ h1,h2,h3,h4,h5,h6{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helve
 
     @media #{$small-only} {
       text-align:center;
+      padding-bottom: 1em;
     }
 
-    h1 {
-      line-height: 1;
 
-      a {
-        font-family: 'Open Sans';
-        font-size:.6em;
-        color: #fff;
-        font-weight: 100;
-        //font-style: italic;
-        @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
-      }
-    }
   }
 
-  @media #{$small-only} {
-  }
+
 }
 
 header {
@@ -90,6 +116,13 @@ header {
     @media #{$small-only} {
       margin-bottom:0;
     }
+  }
+
+  .medium-1.logout.columns {
+    height: 44px;
+    width: 47px;
+    border-left: 1px solid #004b37;
+    border-right: 1px solid #004b37;
   }
 }
 

@@ -34,7 +34,17 @@
     <div class="row brand-text">
         <div id="brand" class="columns">
             <a href="http://uthsc.edu"><img src="/wp-content/themes/uthscblogs/img/uthsc-wordmark.svg" alt="UTHSC Wordmark"></a>
-            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+        </div>
+    </div>
+    <div class="seam"></div>
+    <div class="site-title">
+        <div class="row">
+            <div class="medium-11 columns">
+                <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            </div>
+            <div class="medium-1 logout columns">
+
+            </div>
         </div>
     </div>
 </section>
@@ -44,13 +54,11 @@
                 <nav class="top-bar" data-topbar data-options="scrolltop:false;">
                     <ul class="title-area">
                         <li class="name">
-
                             <div class="row hide-for-large-up search-form">
                                 <div class="small-9 medium-5 columns">
                                     <?php get_search_form() ?>
                                 </div>
                             </div>
-
                         </li>
                         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
                     </ul>

@@ -1,2 +1,5 @@
 *.DS_Store
-.sass-cache/*
+/css/*
+/bower_components/*
+/node_modules/*
+/.idea/*

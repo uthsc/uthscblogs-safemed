@@ -176,6 +176,9 @@ div.content-area {
   }
 }
 
+@import "compass/layout/sticky-footer";
+@include sticky-footer(153px, "#sticky-footer-root", "#sticky-footer-root-footer", "#sticky-footer");
+
 .footer-widget {
   background-color: $uthsc-green-dark;
   border-bottom: 1px solid #000;

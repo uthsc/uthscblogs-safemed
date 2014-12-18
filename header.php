@@ -30,6 +30,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('antialiased'); ?>>
+<div id="sticky-footer-root">
 <section id="banner">
     <div class="row brand-text">
         <div id="brand" class="columns">
@@ -48,7 +49,7 @@
         </div>
     </div>
 </section>
-    <div class="inner-wrap">
+
             <header class="contain-to-grid sticky">
                 <!-- Starting the Top-Bar -->
                 <nav class="top-bar" data-topbar data-options="scrolltop:false;">

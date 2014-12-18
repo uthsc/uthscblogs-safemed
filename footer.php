@@ -1,7 +1,10 @@
 </div><!-- Row End -->
 </div><!-- Container End -->
 
-<div class="full-width footer-widget"><div class="row"></div></div>
+<div id="sticky-footer-root-footer"></div>
+</div><!-- Sticky Footer Root End -->
+
+<div id="sticky-footer">
 
 <footer class="full-width" role="contentinfo">
     <div class="row">
@@ -49,13 +52,13 @@
 
 <?php wp_footer(); ?>
 
-</div><!-- Inner Wrap End -->
+
+</div>
 
 <script>
     (function($) {
         $(document).foundation();
     })(jQuery);
 </script>
-
 </body>
 </html>

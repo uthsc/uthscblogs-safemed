@@ -1,6 +1,8 @@
 #banner {
 
-  @include background-image(linear-gradient($uthsc-green-dark 30%,$uthsc-green));
+  //@include background-image(linear-gradient($uthsc-green-dark 30%,$uthsc-green));
+  background: $uthsc-green;
+  background-color: $uthsc-green;
   border-bottom: 1px solid $uthsc-green-dark;
 
   .brand-text {
@@ -40,7 +42,7 @@
       color: #fff;
       font-weight: 100;
       //font-style: italic;
-      @include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
+      //@include single-text-shadow(2px, 2px, 2px, $color: #1b3328);
     }
   }
 

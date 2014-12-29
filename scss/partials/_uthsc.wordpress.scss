@@ -1,0 +1,68 @@
+div.content-area {
+  padding:1em;
+
+  #content {
+    padding:0;
+    background-color:transparent;
+    border:0;
+  }
+
+  @media only screen and (min-width: 1160px) {
+    padding:0;
+    margin-top:1em;
+  }
+}
+
+figure {
+  margin: 0;
+
+  &.figure figcaption {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: #2E2E2E;
+    background-color: #eee;
+  }
+}
+
+article {
+  &.index-card {
+    padding-bottom: 0;
+  }
+
+  header {
+    h2, h1.entry-title {
+      font-size: 1.5em;
+
+      @media #{$medium-up} {
+        font-size: 1.7em;
+      }
+    }
+  }
+}
+
+h2, h1.entry-title {
+  font-size: 1.5em;
+
+  @media #{$medium-up} {
+    font-size: 1.7em;
+  }
+}
+
+//figcaption fix to prevent overflow in ff
+.entry-content figure {
+  display: block;
+  max-width: 100%;
+
+  figcaption {
+    width: 100%;
+    display:inline-block;
+  }
+}
+
+/* Admin bar fix */
+#wpadminbar {
+
+  @media only screen and (max-width: 600px) {
+    position:fixed;
+  }
+}

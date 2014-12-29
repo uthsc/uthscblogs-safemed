@@ -1,0 +1,30 @@
+.top-bar {
+  .top-bar-section {
+    ul {
+      background:$uthsc-green;
+      li {
+        background:transparent;
+      }
+    }
+  }
+}
+
+/*.tab-bar {
+
+  @include background-image(linear-gradient($uthsc-green 30%,$uthsc-green-dark 100%));
+
+  border-top: 1px solid $uthsc-green-light;
+  border-bottom: 1px solid $uthsc-green-light;
+  section.left-small {
+    border-right:0;
+  }
+
+  #searchform{
+    margin-top: .4em;
+    margin-right: 1em;
+
+    input{
+      height:2em;
+    }
+  }
+}*/

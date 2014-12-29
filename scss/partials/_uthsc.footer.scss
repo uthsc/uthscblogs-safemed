@@ -88,5 +88,18 @@ footer {
   }
 }
 
-@import "compass/layout/sticky-footer";
-@include sticky-footer(153px, "#sticky-footer-root", "#sticky-footer-root-footer", "#sticky-footer");
+#sticky-footer-root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -153px;
+}
+#sticky-footer-root #sticky-footer-root-footer {
+  height: 153px;
+}
+#sticky-footer {
+  clear: both;
+  position: relative;
+  height: 153px;
+}

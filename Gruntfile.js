@@ -8,7 +8,8 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'expanded'
+          outputStyle: 'expanded',
+          sourceMap: true
         },
         files: {
           'css/app.css': 'scss/app.scss',
@@ -66,5 +67,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('build', ['uglify','copy']);
-  grunt.registerTask('default', ['compass','watch']);
+  grunt.registerTask('default', ['sass','watch']);
 }

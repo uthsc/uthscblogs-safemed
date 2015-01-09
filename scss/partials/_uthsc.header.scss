@@ -1,5 +1,9 @@
 header {
 
+  .top-bar-section > ul > .divider {
+    border:none;
+  }
+
   &.contain-to-grid {
     //@include background-image(linear-gradient($uthsc-green 30%,$uthsc-green-dark 100%));
     background:$uthsc-green;

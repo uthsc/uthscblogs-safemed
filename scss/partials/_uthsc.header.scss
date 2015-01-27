@@ -1,5 +1,4 @@
 header {
-
   .top-bar-section > ul > .divider {
     border:none;
   }
@@ -8,23 +7,6 @@ header {
     //@include background-image(linear-gradient($uthsc-green 30%,$uthsc-green-dark 100%));
     background:$uthsc-green;
     //border-top: 1px solid $uthsc-green-light;
-
-    #searchform {
-
-      input#s {
-        border:0;
-      }
-
-      margin:.4em 1em 0 0;
-
-      @media #{$large} {
-        margin-top:0em;
-      }
-
-      @media only screen and (min-width: 1160px) {
-        margin-right:0em;
-      }
-    }
 
     @media #{$medium-only} {
       margin-bottom:0;
@@ -40,5 +22,4 @@ header {
     border-left: 1px solid #004b37;
     border-right: 1px solid #004b37;
   }
-
 }

@@ -66,7 +66,12 @@ img.aligncenter {
 // Add HTML5 Caption Class for Images
 figure.figure {
   margin: 0 auto;
-  display: table;
+  //display: table;
+
+  img {
+    display:block;
+  }
+
   figcaption {
     font-size: rem-calc(14);
     line-height: 1.4;
@@ -74,7 +79,7 @@ figure.figure {
     padding: 8px 10px;
     color: #999;
     //margin-bottom: $panel-margin-bottom;
-    display: table-caption;
+    //display: table-caption;
     caption-side: bottom;
   }
 }
@@ -87,10 +92,6 @@ figure.alignright.figure {
 figure.alignleft.figure {
   float: left;
   margin: 0 18px 18px 0;
-}
-
-.footer-widget {
-  background-color: #eee;
 }
 
 body > header.contain-to-grid {
@@ -285,23 +286,6 @@ ol.commentlist {
       border-bottom: 1px solid #ddd;
       color: #888;
       font-weight: 600;
-    }
-  }
-}
-
-// Start the footer
-footer.full-width {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-  padding-top: rem-calc(48);
-  p {
-    font-size: rem-calc(14);
-  }
-  a {
-    color: #666;
-    font-size: rem-calc(15);
-    &:hover, &:focus {
-      color: $body-font-color;
     }
   }
 }

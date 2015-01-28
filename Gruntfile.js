@@ -12,8 +12,6 @@ module.exports = function(grunt) {
           sourceMap: true
         },
         files: {
-          'css/app.css': 'scss/app.scss',
-          'css/style.css': 'scss/style.scss',
           'css/uthsc.css': 'scss/uthsc.scss'
         }
       }
@@ -53,9 +51,9 @@ module.exports = function(grunt) {
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
-      compass: {
+      sass: {
         files: 'scss/**/*.scss',
-        tasks: ['compass']
+        tasks: ['sass']
       }
     }
   });

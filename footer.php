@@ -7,7 +7,7 @@
 <div id="sticky-footer">
         <div class="uthsc-footer-top full-width">
             <div class="row" data-equalizer>
-                <?php dynamic_sidebar("Custom Footer"); ?>
+                <?php dynamic_sidebar("Footer"); ?>
             </div>
         </div>
 

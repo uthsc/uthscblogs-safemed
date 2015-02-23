@@ -13,6 +13,11 @@
         background: transparent;
       }
     }
+
+    //fix for inconsistent background
+    .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+      background: $uthsc-green-dark;
+    }
   }
 }
 
@@ -36,12 +41,12 @@ form#searchform {
     width: auto;
     display: inline;
     margin: 0;
-    padding: .5em;
+    padding: 0 .5em;
     top: 0;
     background: $uthsc-green-dark;
     position: relative;
     height: 1.75rem;
-    line-height: 1rem;
+    line-height: 1em;
     font-size: 1em;
     float: left;
   }

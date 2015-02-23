@@ -15,11 +15,20 @@ header {
       margin-bottom:0;
     }
   }
+}
 
-  .medium-1.logout.columns {
-    height: 44px;
-    width: 47px;
-    border-left: 1px solid #004b37;
-    border-right: 1px solid #004b37;
+.logout-container a{
+  color:#fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right:0;
+}
+.logout-container {
+  height: 45px;
+  position: relative;
+  @media #{$small-only} {
+    height: 33px;;
   }
 }

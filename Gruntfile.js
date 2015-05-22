@@ -8,11 +8,10 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'expanded',
+          sourceMap: true
         },
         files: {
-          'css/app.css': 'scss/app.scss',
-          'css/style.css': 'scss/style.scss',
           'css/uthsc.css': 'scss/uthsc.scss'
         }
       }
@@ -20,40 +19,41 @@ module.exports = function(grunt) {
 
     compass: {
       dist: {
-          options: {
-              importPath: 'bower_components/foundation/scss',
-              outputStyle: 'compressed',
-              sassDir: 'scss',
-              cssDir: 'css'
-          }
+        options: {
+          importPath: 'bower_components/foundation/scss',
+          outputStyle: 'expanded',
+          sassDir: 'scss',
+          cssDir: 'css',
+          sourcemap: true
+        }
       }
     },
 
     uglify: {
-    options: {
-      mangle: false
-    },
-    my_target: {
-      files: {
-        'js/modernizr.min.js': ['bower_components/modernizr/modernizr.js']
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: {
+          'js/modernizr.min.js': ['bower_components/modernizr/modernizr.js']
+        }
       }
-    }
     },
 
-	copy: {
-	  main: {
-	    nonull: true,
-	    src: 'bower_components/foundation/js/foundation.min.js',
-	    dest: 'js/foundation.min.js'
-	  }
-	},
+    copy: {
+      main: {
+        nonull: true,
+        src: 'bower_components/foundation/js/foundation.min.js',
+        dest: 'js/foundation.min.js'
+      }
+    },
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
-      compass: {
+      sass: {
         files: 'scss/**/*.scss',
-        tasks: ['compass']
+        tasks: ['sass']
       }
     }
   });
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  
+
   grunt.registerTask('build', ['uglify','copy']);
-  grunt.registerTask('default', ['compass','watch']);
+  grunt.registerTask('default', ['sass','watch']);
 }

@@ -1,0 +1,20 @@
+.footer-widget {
+  background-color: $uthsc-green-dark;
+  border-bottom: 1px solid #000;
+}
+
+#sidebar, .footer-widget {
+  .panel {
+    a {
+      color: $uthsc-green;
+      &:hover {
+        color: $uthsc-green-dark;
+      }
+    }
+  }
+  .widget {
+    h4 {
+      color: $uthsc-green;
+    }
+  }
+}

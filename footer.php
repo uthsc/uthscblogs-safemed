@@ -19,8 +19,8 @@
 
                     <p>&copy; 2015 The University of Tennessee<br/>Health Science Center<br/>
                         Memphis, Tennessee 38163<br/>
-                        Main: 901-448-5500<br/>
-                        TDD: 901-448-7382</p>
+                        Main: (901) 448-5500<br/>
+                        TDD: (901) 448-7382</p>
                     <br/>
                     <a href="mailto:webmaster@uthsc.edu" class="button radius secondary tiny"><i
                             class="fa fa-envelope fa-3x two-line-button-icon"></i><span class="two-line-button-text">Email<br/>Webmaster</span></a>
@@ -55,7 +55,7 @@
                             <hr />
                             <h3 class="lead"><a class="button emergency" href="tel:911"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> 911</a></h3>
                             <p>or Campus Police at</p>
-                            <h3><a class="button emergency" href="tel:901-448-4444"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> 901-448-4444</a></h3>
+                            <h3><a class="button emergency" href="tel:(901) 448-4444"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> (901) 448-4444</a></h3>
                         </div>
                         <p><a href="#" data-reveal-id="myModal6" class="secondary button tiny expand"><i class="fa fa-chevron-up fa-2x fa-button"></i> Previous Emergency Number</a>
                             <a href="#" data-reveal-id="myModal2" class="secondary button tiny expand"><i class="fa fa-chevron-down fa-2x fa-button"></i> Next Emergency Number&emsp;&emsp;</a></p>
@@ -66,7 +66,7 @@
                         <div class="call-buttons-box">
                             <h2>Medical Urgent Care</h2>
                             <hr />
-                            <h3 class="lead"><a class="button emergency" href="tel:901-448-5630"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> 901-448-5630</a></h3>
+                            <h3 class="lead"><a class="button emergency" href="tel:(901) 448-5630"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> (901) 448-5630</a></h3>
                         </div>
                         <p><a href="#" data-reveal-id="myModal1" class="secondary button tiny expand"><i class="fa fa-chevron-up fa-2x fa-button"></i> Previous Emergency Number</a>
                             <a href="#" data-reveal-id="myModal3" class="secondary button tiny expand"><i class="fa fa-chevron-down fa-2x fa-button"></i> Next Emergency Number&emsp;&emsp;</a></p>
@@ -77,7 +77,7 @@
                         <div class="call-buttons-box">
                             <h2>Behavioral Health Urgent Care</h2>
                             <hr />
-                            <h3 class="lead"><a class="button emergency" href="tel:901-448-5064"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> 901-448-5064</a></h3>
+                            <h3 class="lead"><a class="button emergency" href="tel:(901) 448-5064"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> (901) 448-5064</a></h3>
                         </div>
                         <p><a href="#" data-reveal-id="myModal2" class="secondary button tiny expand"><i class="fa fa-chevron-up fa-2x fa-button"></i> Previous Emergency Number</a>
                             <a href="#" data-reveal-id="myModal4" class="secondary button tiny expand"><i class="fa fa-chevron-down fa-2x fa-button"></i> Next Emergency Number&emsp;&emsp;</a></p>
@@ -110,7 +110,7 @@
                         <div class="call-buttons-box">
                             <h2>After Hours Medical/Behavioral<br />Available (24/7)</h2>
                             <hr />
-                            <h3 class="lead"><a class="button emergency" href="tel:901-541-5654"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> 901-541-5654</a></h3>
+                            <h3 class="lead"><a class="button emergency" href="tel:(901) 541-5654"><i class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></i> (901) 541-5654</a></h3>
                         </div>
                         <p><a href="#" data-reveal-id="myModal5" class="secondary button tiny expand"><i class="fa fa-chevron-up fa-2x fa-button"></i> Previous Emergency Number</a>
                             <a href="#" data-reveal-id="myModal1" class="secondary button tiny expand"><i class="fa fa-chevron-down fa-2x fa-button"></i> Next Emergency Number&emsp;&emsp;</a></p>
@@ -123,7 +123,7 @@
 
                             <div class="columns large-5 medium-4 text-right emergency-phone-icon"><i class="fa fa-phone fa-flip-horizontal fa-3x"></i></div>
                             <div class="columns large-7 medium-8 text-left"><h4>Emergency<br/>Numbers</h4></div>
-                            <div class="columns small-12">Call 911 or Campus Police at 901-448-4444<br/>
+                            <div class="columns small-12">Call 911 or Campus Police at (901) 448-4444<br/>
                                 More Emergency Information</div>
 
                         </a>

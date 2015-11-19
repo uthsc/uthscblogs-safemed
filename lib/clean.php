@@ -31,11 +31,10 @@ if (!function_exists('reverie_startup ')) {
         add_filter('img_caption_shortcode', 'reverie_cleaner_caption', 10, 3);
         add_filter('get_image_tag_class', 'reverie_image_tag_class', 0, 4);
         add_filter('get_image_tag', 'reverie_image_editor', 0, 4);
-        add_filter('the_content', 'reverie_img_unautop', 30);
+        //add_filter('the_content', 'reverie_img_unautop', 30);
 
     } /* end reverie_startup */
 }
-
 
 /**********************
  * WP_HEAD GOODNESS
@@ -141,9 +140,6 @@ if (!function_exists('reverie_scripts_and_styles ')) {
             // register FontAwesome
             wp_register_style('font-awesome', get_template_directory_uri() . '/bower_components/fontawesome/css/font-awesome.min.css');
 
-            // ie-only style sheet
-            wp_register_style('reverie-ie-only', get_template_directory_uri() . '/css/ie.css', array(), '');
-
             // comment reply script for threaded comments
             if (get_option('thread_comments')) {
                 wp_enqueue_script('comment-reply');
@@ -158,17 +154,9 @@ if (!function_exists('reverie_scripts_and_styles ')) {
             }
 
             // enqueue styles and scripts
-            wp_enqueue_script('reverie-modernizr');
             wp_enqueue_style('google-font');
             wp_enqueue_style('font-awesome');
-            wp_enqueue_style('reverie-ie-only');
-            /*
-            I recommend using a plugin to call jQuery
-            using the google cdn. That way it stays cached
-            and your site will load faster.
-            */
             wp_enqueue_script('jquery');
-
             wp_enqueue_script('reverie-js');
             wp_enqueue_script('html5shiv');
 
@@ -271,4 +259,6 @@ if (!function_exists('reverie_img_unautop ')) {
         return $pee;
     } /* end reverie_img_unautop */
 }
+
+
 ?>

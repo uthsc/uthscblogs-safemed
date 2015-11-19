@@ -28,7 +28,7 @@ if (!function_exists('reverie_startup ')) {
         add_filter('style_loader_tag', 'reverie_ie_conditional', 10, 2);
 
         // additional post related cleaning
-        add_filter('img_caption_shortcode', 'reverie_cleaner_caption', 10, 3);
+        add_filter('img_caption_shortcode', 'my_img_caption_shortcode_filter', 10, 3);
         add_filter('get_image_tag_class', 'reverie_image_tag_class', 0, 4);
         add_filter('get_image_tag', 'reverie_image_editor', 0, 4);
         //add_filter('the_content', 'reverie_img_unautop', 30);
@@ -178,49 +178,50 @@ if (!function_exists('reverie_ie_conditional ')) {
 /*********************
  * Post related cleaning
  *********************/
-/* Customized the output of caption, you can remove the filter to restore back to the WP default output. Courtesy of DevPress. http://devpress.com/blog/captions-in-wordpress/ */
-if (!function_exists('reverie_cleaner_caption ')) {
-    function reverie_cleaner_caption($output, $attr, $content)
+
+/**
+ * Improves the WordPress caption shortcode with HTML5 figure & figcaption, microdata & wai-aria attributes
+ *
+ * Author: @joostkiens
+ * Licensed under the MIT license
+ *
+ * @param  string $val     Empty
+ * @param  array  $attr    Shortcode attributes
+ * @param  string $content Shortcode content
+ * @return string          Shortcode output
+ */
+if (!function_exists('my_img_caption_shortcode_filter ')) {
+    function my_img_caption_shortcode_filter($val, $attr, $content = null)
     {
-
-        /* We're not worried abut captions in feeds, so just return the output here. */
-        if (is_feed())
-            return $output;
-
-        /* Set up the default arguments. */
-        $defaults = array(
+        extract(shortcode_atts(array(
             'id' => '',
-            'align' => 'alignnone',
+            'align' => 'aligncenter',
             'width' => '',
             'caption' => ''
-        );
+        ), $attr));
 
-        /* Merge the defaults with user input. */
-        $attr = shortcode_atts($defaults, $attr);
+        // No caption, no dice...
+        if (1 > (int)$width || empty($caption))
+            return $val;
 
-        /* If the width is less than 1 or there is no caption, return the content wrapped between the [caption]< tags. */
-        if (1 > $attr['width'] || empty($attr['caption']))
-            return $content;
+        if ($id)
+            $id = esc_attr($id);
 
-        /* Set up the attributes for the caption <div>. */
-        $attributes = ' class="figure ' . esc_attr($attr['align']) . '"';
+        // Add itemprop="contentURL" to image - Ugly hack
+        $content = str_replace('<img', '<img itemprop="contentURL"', $content);
 
-        /* Open the caption <div>. */
-        $output = '<figure' . $attributes . '>';
+        $figure_attributes = 'id="' . $id . '" aria-describedby="figcaption_' . $id . '" class="figure ' . esc_attr($align);
 
-        /* Allow shortcodes for the content the caption was created for. */
-        $output .= do_shortcode($content);
+        $figure_attributes .= '" itemscope itemtype="http://schema.org/ImageObject"';
 
-        /* Append the caption text. */
-        $output .= '<figcaption>' . $attr['caption'] . '</figcaption>';
+        $output = '<figure ' . $figure_attributes . '><div class="figure-image-container">';
 
-        /* Close the caption </div>. */
-        $output .= '</figure>';
+        $output .= do_shortcode($content) . '<figcaption " class="wp-caption-text" itemprop="description">' . $caption;
 
-        /* Return the formatted, clean caption. */
+        $output .= '</div></figcaption></figure>';
+
         return $output;
-
-    } /* end reverie_cleaner_caption */
+    }
 }
 
 // Clean the output of attributes of images in editor. Courtesy of SitePoint. http://www.sitepoint.com/wordpress-change-img-tag-html/
@@ -259,6 +260,3 @@ if (!function_exists('reverie_img_unautop ')) {
         return $pee;
     } /* end reverie_img_unautop */
 }
-
-
-?>

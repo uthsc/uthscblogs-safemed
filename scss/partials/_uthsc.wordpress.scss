@@ -13,14 +13,30 @@ div.content-area {
   }
 }
 
-figure {
-  margin: 0;
+/*
+ * WordPress image caption widths should
+ * be equal to the width of the image
+ */
+.entry-content figure {
+  position: relative;
+  margin: 0 auto;
+  font-size: 0;
 
-  &.figure figcaption {
+  .figure-image-container {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
     font-size: 0.8rem;
     line-height: 1.2;
     color: #2E2E2E;
     background-color: #eee;
+    padding: 10px;
   }
 }
 
@@ -48,20 +64,8 @@ h2, h1.entry-title {
   }
 }
 
-//figcaption fix to prevent overflow in ff
-.entry-content figure {
-  display: block;
-  max-width: 100%;
-
-  figcaption {
-    width: 100%;
-    display:inline-block;
-  }
-}
-
 /* Admin bar fix */
 #wpadminbar {
-
   @media only screen and (max-width: 600px) {
     position:fixed;
   }

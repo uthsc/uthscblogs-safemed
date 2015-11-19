@@ -135,11 +135,6 @@
     <?php wp_footer(); ?>
 
 </div>
-
-<script>
-    (function ($) {
-        $(document).foundation();
-    })(jQuery);
-</script>
+<script src="/wp-content/themes/uthscblogs/js/app.min.js"></script>
 </body>
 </html>

@@ -46,20 +46,6 @@
 </head>
 <body <?php body_class('antialiased'); ?>>
 
-<script>
-
-    (function($) {
-
-        $(document).ready(function(){
-            $("figure img").load(function(){
-                $(this).parent().width( $(this).width());
-            });
-        });
-
-    })( jQuery );
-
-</script>
-
 <div id="sticky-footer-root">
     <section id="banner">
         <div class="row brand-text">

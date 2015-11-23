@@ -76,12 +76,13 @@
                 <li class="name">
                     <div class="row hide-for-large-up search-form">
                         <div class="small-9 medium-5 columns">
-                            <?php get_search_form() ?>
+                            <?php //get_search_form() ?>
                         </div>
                     </div>
                 </li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
             </ul>
+
             <section class="top-bar-section">
                 <?php
                 wp_nav_menu(array(
@@ -97,8 +98,6 @@
                     )),
                 ));
                 ?>
-            </section>
-            <section class="top-bar-section right show-for-large-up">
                 <?php get_search_form() ?>
             </section>
         </nav>

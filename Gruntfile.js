@@ -38,6 +38,18 @@ module.exports = function(grunt) {
             nonull: true,
             src: 'bower_components/lodash/lodash.js',
             dest: 'js/scripts/lodash.js'
+          },
+          { //fontawesome css
+            nonull: true,
+            src: 'bower_components/fontawesome/css/font-awesome.min.css',
+            dest: 'css/font-awesome.min.css'
+          },
+          { //fontawesome fonts
+            flatten: true,
+            expand: true,
+            nonull: true,
+            src: 'bower_components/fontawesome/fonts/*',
+            dest: 'fonts/'
           }
         ]
       }

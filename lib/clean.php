@@ -138,7 +138,7 @@ if (!function_exists('reverie_scripts_and_styles ')) {
             wp_register_style('google-font', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:400|Quattrocento');
 
             // register FontAwesome
-            wp_register_style('font-awesome', get_template_directory_uri() . '/bower_components/fontawesome/css/font-awesome.min.css');
+            wp_register_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css');
 
             // comment reply script for threaded comments
             if (get_option('thread_comments')) {

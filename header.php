@@ -70,23 +70,6 @@
 </head>
 <body <?php body_class('antialiased'); ?>>
 
-<div id="sticky-footer-root">
-    <section id="banner">
-        <div class="row brand-text">
-            <div id="brand" class="columns">
-                <a href="http://uthsc.edu"><img src="/wp-content/themes/uthscblogs/img/uthsc-wordmark.svg"
-                                                alt="UTHSC Wordmark"></a>
-            </div>
-        </div>
-        <div class="seam"></div>
-        <div class="site-title">
-            <div class="row">
-                <div class="medium-11 columns">
-                    <h1><a href="<?php echo esc_url(home_url('/')); ?>"
-                           title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
-                           rel="home"><?php bloginfo('name'); ?></a></h1>
-                </div>
-                <div class="medium-1 logout columns">
 
                 </div>
             </div>

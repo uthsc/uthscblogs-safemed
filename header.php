@@ -17,6 +17,13 @@
         bloginfo('name'); ?></title>
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-title" content="Project SafeMed"/>
+    <meta property="og:image" content="images/safemed-icon.jpg"/>
+    <meta property="og:title" content="Project SafeMed"/>
+    <meta property="og:site_name" content="Project SafeMed"/>
+    <meta property="og:url" content="http://safemed.org"/>
+    <meta property="og:description"
+          content="SafeMed: A joint venture between University of Tennessee Health Science Center (UTHSC) and Methodist LeBonheur HealthCare"/>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;

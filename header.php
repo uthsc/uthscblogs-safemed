@@ -71,12 +71,22 @@
 <body <?php body_class('antialiased'); ?>>
 
 
+    <!-- Header --><!--Hero Image-->
+    <header class="hero medium-text-left small-text-center">
+        <a href="/" title="Home">
+            <div class="columns logo-background">
+                <div class="row">
+                    <div class="columns small-4">
+                        <img src="/wp-content/themes/uthscblogs-safemed/images/safemed-logo.png" alt="safemed logo"/>
+                    </div>
+                    <div class="columns small-8 large-12">
+                        <h2>Making sure all parts of your&nbsp;care fit&nbsp;together</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <header class="contain-to-grid sticky">
+        </a>
+    </header>
+    <div class="contain-to-grid sticky">
         <!-- Starting the Top-Bar -->
         <nav class="top-bar" data-topbar data-options="scrolltop:false;">
             <ul class="title-area">

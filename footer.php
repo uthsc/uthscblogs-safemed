@@ -1,8 +1,6 @@
 </div><!-- Row End -->
 </div><!-- Container End -->
 
-<div id="sticky-footer-root-footer"></div>
-</div><!-- Sticky Footer Root End -->
 
 <div id="sticky-footer">
         <div class="uthsc-footer-top full-width">

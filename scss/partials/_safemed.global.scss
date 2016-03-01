@@ -1,0 +1,212 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+#content {
+  border: none;
+  padding: 1rem;
+}
+#content .row {
+  margin-bottom: 2em !important;
+}
+h2,h3,h4,h5,h6{
+&:before {
+  display: block;
+  content: " ";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden;
+}
+}
+h2, h3 {
+  color: $safemed-red !important;
+}
+h4 {
+  color: $safemed-red-dark !important;
+}
+.row.full {
+  width: 100%;
+  max-width: 100%;
+}
+a {
+  font-weight: bold;
+}
+.handwriting {
+  font-family: 'Short Stack', cursive;
+  font-size: 1.1em !important;
+}
+.pnone-number {
+  white-space: nowrap;
+}
+/* Add padding to floated images */
+.left img, figure.left {
+  margin-right: 1em;
+}
+
+.right img, figure.right {
+  margin-left: 1em;
+}
+figure.right img  {
+  margin: 0;
+}
+.image-40 {
+  width: 40%;
+}
+figure {
+  border: 1px solid $base;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0;
+  figcaption {
+    padding: 5px;
+    font-size: 0.85em;
+    font-family: "Open Sans";
+  }
+}
+.panel.with-ribbon {
+  padding-bottom: 5em;
+}
+.ribbon-simple {
+  background: none repeat scroll 0 0 #2e599f;
+  bottom: 25px;
+  color: #ffffff;
+  font-size: 16px !important;
+  margin-top: -5em;
+  padding: 1em 2em;
+  width: 100%;
+}
+  .ribbon {
+  background: none repeat scroll 0 0 $secondary-color;
+  bottom: 25px;
+  color: #ffffff;
+  font-size: 16px !important;
+  left: -17px;
+  margin: 2em auto 3em;
+  padding: 1em 2em;
+  position: absolute;
+  width: 64.5em;
+}
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid darken($secondary-color, 8%);
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: darken($secondary-color, 16%) transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+.sub-tagline-box {
+    background: $safemed-red;
+    padding: 0;
+}
+.sub-tagline {
+  color: $smoke;
+  letter-spacing: 0.6em;
+  margin: 0;
+}
+figure.staff, figure.bio {
+  margin-top: 1em;
+  img {
+    width: 100%;
+  }
+}
+.stories {
+  h2 {
+    font-size: 3.6vmin;
+  }
+  .title-pic-read {
+    padding: 0 1rem !important;
+    display: flex;
+    flex-direction: column;
+    .bio {
+   margin-bottom: 1rem;
+  }
+    .read-transcript {
+      flex: 1;
+    }
+  }
+}
+.fa.fa-map-marker.fa-2x.dropcap {
+  float: left;
+  padding: 0.15em 0.3em 0;
+}
+.media {
+  padding: 1rem 0 0 1rem !important;
+}
+.flex-video {
+  position: relative;
+  padding-bottom: 56%;
+  padding-top: 0; height: 0; overflow: hidden;
+}
+
+table {
+  ul, p {
+    font-size: 0.875rem;
+  }
+}
+*:target {
+  background-color: #ededed;
+}
+ul.links-external a:after,
+a.link-external:after,
+a.link-external.oddball:after {
+  content: ' \f08e';
+  font-family: fontawesome;
+}
+
+ul.links-pdf a:after,
+a.link-pdf:after,
+a.link-pdf.oddball:after {
+  content: ' \f1c1';
+  font-family: fontawesome;
+}
+
+ul.links-word a:after,
+a.link-word:after,
+a.link-word.oddball:after {
+  content: ' \f1c2';
+  font-family: fontawesome;
+}
+
+ul.links-excel a:after,
+a.link-excel:after,
+a.link-excel.oddball:after {
+  content: ' \f1c3';
+  font-family: fontawesome;
+}
+
+ul.links-ppt a:after,
+a.link-ppt:after,
+a.link-ppt.oddball:after {
+  content: ' \f1c4';
+  font-family: fontawesome;
+}
+@media only screen and (max-width: 40em) {
+  table * {
+      font-size: 0.7rem !important;
+    }
+}

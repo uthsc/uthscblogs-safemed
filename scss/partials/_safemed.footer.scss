@@ -1,0 +1,57 @@
+.connect-boxes {
+  background-color: #a4c3b2;
+}
+.connect-box {
+  p, li {
+  font-size: .85em;
+  }
+  li::first-letter {
+    font-size: 1.6em;
+    color: #2e599f;
+    line-height: 1;
+  }
+  }
+.connect-box ul {
+  margin: -1.5em 0 0;
+}
+.footer {
+  background: #333;
+  color: #ffffff;
+  padding: 2em 0;
+}
+.social-icon {
+  margin-bottom: 1em;
+}
+.social-icon i {
+  padding: 11px;
+  &:hover {
+    color: $safemed-red;
+  }
+}
+.logo-panel {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80px;
+  max-width: 200px;
+  border: 1em solid $panel-bg;
+}
+.uthsc-panel {
+  background-image: url("../images/uthsc-logo-stacked.svg");
+}
+.methodist-panel {
+  background-image: url("../images/methodist-logo.png");
+}
+@media only screen and (max-width: 40em) {
+  .logo-panel-group {
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {  /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+  .logo-panel {
+    width: 46%;
+    padding: 3em;
+    margin: 0 2% 0 2% !important;
+    max-width: 100%;
+  }
+}

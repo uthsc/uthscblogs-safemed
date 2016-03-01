@@ -1,0 +1,79 @@
+header {
+  &.hero {
+    background-image: url("../images/pill-box.jpg");
+    background-position: 0 61%;
+    background-size: cover;
+    height: 21vw;
+    max-height: 295px;
+    min-height: 230px;
+    margin-bottom: 0;
+  }
+
+  .logo-background {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    top: 25px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 3.3vmax;
+    margin: 0;
+    padding: 0 0.4em;
+    line-height: 1em;
+    color: $safemed-red;
+  }
+  h2 {
+    padding: 0 1em;
+    margin: 0;
+    line-height: 1em;
+    color: #333;
+    font-size: 4vmin;
+  }
+}
+.top-bar-section ul li ul li ul li {
+
+  a {
+    background-color: #444 !important;
+    &:hover{
+      background-color: scale_color($safemed-red, $lightness: -20%) !important;
+    }
+  &:before {
+    font-family: fontawesome;
+    font-size: 1rem;
+    content: '\f101';
+    color: $safemed-red;
+    padding-right: 1rem;
+    text-shadow: 1px 1px 0 #444;
+  }
+  }
+
+  &:first-of-type {
+    padding-top: 1px;
+  }
+  &:last-of-type {
+    padding-bottom: 1px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  header {
+    &.hero {
+      min-height: 110px;
+    }
+    .logo-background {
+      top: 5vw;
+      padding: 6px;
+    }
+    h2 {
+      font-size: 2.7vmax;
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (medium) {
+  header {
+    h2 {
+      font-size: 4vmax;
+    }
+  }
+}

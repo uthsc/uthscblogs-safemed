@@ -173,6 +173,7 @@ table {
 }
 ul.links-external a:after,
 a.link-external:after,
+li.link-external a:after,
 a.link-external.oddball:after {
   content: ' \f08e';
   font-family: fontawesome;
@@ -180,6 +181,7 @@ a.link-external.oddball:after {
 
 ul.links-pdf a:after,
 a.link-pdf:after,
+li.link-pdf a:after,
 a.link-pdf.oddball:after {
   content: ' \f1c1';
   font-family: fontawesome;
@@ -187,6 +189,7 @@ a.link-pdf.oddball:after {
 
 ul.links-word a:after,
 a.link-word:after,
+li.link-word a:after,
 a.link-word.oddball:after {
   content: ' \f1c2';
   font-family: fontawesome;
@@ -194,6 +197,7 @@ a.link-word.oddball:after {
 
 ul.links-excel a:after,
 a.link-excel:after,
+li.link-excel a:after,
 a.link-excel.oddball:after {
   content: ' \f1c3';
   font-family: fontawesome;
@@ -201,6 +205,7 @@ a.link-excel.oddball:after {
 
 ul.links-ppt a:after,
 a.link-ppt:after,
+li.link-ppt a:after,
 a.link-ppt.oddball:after {
   content: ' \f1c4';
   font-family: fontawesome;

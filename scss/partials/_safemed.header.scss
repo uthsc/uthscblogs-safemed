@@ -1,4 +1,4 @@
-header {
+#banner {
   &.hero {
     background-image: url("../images/pill-box.jpg");
     background-position: 0 61%;
@@ -7,6 +7,14 @@ header {
     max-height: 295px;
     min-height: 230px;
     margin-bottom: 0;
+
+    h2 {
+      padding: 0 1em;
+      margin: 0;
+      line-height: 1em;
+      color: #333;
+      font-size: 4vmin;
+    }
   }
 
   .logo-background {
@@ -15,20 +23,8 @@ header {
     top: 25px;
     padding: 10px;
   }
-  h1 {
-    font-size: 3.3vmax;
-    margin: 0;
-    padding: 0 0.4em;
-    line-height: 1em;
-    color: $safemed-red;
-  }
-  h2 {
-    padding: 0 1em;
-    margin: 0;
-    line-height: 1em;
-    color: #333;
-    font-size: 4vmin;
-  }
+
+
 }
 .top-bar-section ul li ul li ul li {
 

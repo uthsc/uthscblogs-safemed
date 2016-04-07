@@ -61,14 +61,35 @@ body {
 #content .row {
   margin-bottom: 2em !important;
 }
+
+h1 {
+  font-weight: bold;
+  font-size: 1.9rem;
 }
+h2 {
+  font-size: 1.7rem;
 }
-h2, h3 {
-  color: $safemed-red !important;
+h3 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.3rem;
 }
 h4 {
+  font-size: 1.2rem;
   color: $safemed-red-dark !important;
 }
+h5 {
+  font-size: 1.15rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+
+h2,h3,h4,h5,h6 {
+  font-weight: 200;
+}
+
 h1, h2, h3 {
   color: $safemed-blue !important;
 }

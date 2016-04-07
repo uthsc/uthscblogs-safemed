@@ -70,23 +70,26 @@
 </head>
 <body <?php body_class('antialiased'); ?>>
 
-
-    <!-- Header --><!--Hero Image-->
-    <header class="hero medium-text-left small-text-center">
-        <a href="/" title="Home">
-            <div class="columns logo-background">
+<div id="sticky-footer-root">
+    <section id="banner" class="hero">
+        <div class="row brand-text logo-background">
+            <div id="brand" class="columns">
                 <div class="row">
                     <div class="columns small-4">
-                        <img src="/wp-content/themes/uthscblogs-safemed/images/safemed-logo.png" alt="safemed logo"/>
+                        <a href="/" title="Home">
+                            <img src="/wp-content/themes/uthscblogs-safemed/images/safemed-logo.png" alt="safemed logo"/>
+                        </a>
                     </div>
                     <div class="columns small-8 large-12">
                         <h2 class="safemed-slogan">Making sure all parts of your&nbsp;care fit&nbsp;together</h2>
                     </div>
                 </div>
             </div>
-        </a>
-    </header>
-    <div class="contain-to-grid sticky">
+        </div>
+        <div class="seam"></div>
+    </section>
+
+    <header class="contain-to-grid sticky">
         <!-- Starting the Top-Bar -->
         <nav class="top-bar" data-topbar data-options="scrolltop:false;">
             <ul class="title-area">

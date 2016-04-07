@@ -1,3 +1,20 @@
+/* flex mixins */
+@mixin safemed-vertical-center {
+  display: flex;
+  align-items: center;
+}
+@mixin safemed-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+@mixin safemed-horizontal-spaced {
+  display: flex;
+  justify-content: space-around;
+}
+@mixin safemed-horizontal-justify {
+  display: flex;
+  justify-content: space-between;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }

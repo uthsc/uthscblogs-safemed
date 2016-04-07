@@ -43,6 +43,20 @@ body {
 #content {
   border: none;
   padding: 1rem;
+  a {
+    @include safemed-anchortext;
+  }
+  .post {
+    a {
+      background-image: none;
+    }
+    .read-more a, p a {
+      @include safemed-anchortext;
+    }
+  }
+}
+#sidebar a {
+  @include safemed-anchortext;
 }
 #content .row {
   margin-bottom: 2em !important;

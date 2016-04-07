@@ -138,15 +138,16 @@ $black       : #000000;
 // $primary-color: #008CBA;
 $primary-color: #c51230;
 // $secondary-color: #e7e7e7;
-$secondary-color: #12c416;
+$secondary-color: #007e00;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // MDC colors
-$safemed-red       : $primary-color;
+$safemed-red      : $primary-color;
 $safemed-red-dark : darken($safemed-red, 20%);
+$safemed-blue     : #1f72a5;
 
 // We use these to control various global styles
 // $body-bg: $white;

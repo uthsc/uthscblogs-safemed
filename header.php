@@ -129,8 +129,8 @@
                 <?php get_search_form() ?>
             </section>
         </nav>
-    </div>
-    <!-- End Header -->
+        <!-- End of Top-Bar -->
+    </header>
     <!-- Start the main container -->
     <div class="container" role="document">
-        <div class="row">
+        <div class="row content-area">

@@ -25,13 +25,6 @@ body {
 #content .row {
   margin-bottom: 2em !important;
 }
-h2,h3,h4,h5,h6{
-&:before {
-  display: block;
-  content: " ";
-  margin-top: -50px;
-  height: 50px;
-  visibility: hidden;
 }
 }
 h2, h3 {
@@ -135,10 +128,7 @@ background-color: #ddd;
   right: 0;
   border-width: 1em 1em 0 0;
 }
-.sub-tagline-box {
-    background: $safemed-red;
-    padding: 0;
-}
+
 .sub-tagline {
   color: $smoke;
   letter-spacing: 0.6em;

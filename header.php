@@ -104,12 +104,13 @@
             </ul>
 
             <section class="top-bar-section">
-                <ul class="title-area">
-                    <li class="name">
-                        <h1><a href="/" title="Home"><i class="fa fa-home fa-2x home-icon"></i></a></h1>
+                <ul class="left">
+                    <li>
+                        <a href="/">
+                            <span class="safemed-home-menu-icon fa fa-home fa-2x"></span>
+                        </a>
                     </li>
-                    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                    <li class="divider"></li>
                 </ul>
                 <?php
                 wp_nav_menu(array(

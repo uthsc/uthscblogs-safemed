@@ -216,6 +216,25 @@ a.link-ppt.oddball:after {
   content: ' \f1c4';
   font-family: fontawesome;
 }
+
+#sticky-footer-root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -153px;
+}
+
+#sticky-footer-root #sticky-footer-root-footer {
+  height: 153px;
+}
+
+#sticky-footer {
+  clear: both;
+  position: relative;
+  height: 153px;
+}
+
 @media only screen and (max-width: 40em) {
   table * {
       font-size: 0.7rem !important;

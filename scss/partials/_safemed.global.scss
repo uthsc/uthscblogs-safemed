@@ -23,6 +23,13 @@ h2, h3 {
 h4 {
   color: $safemed-red-dark !important;
 }
+h1, h2, h3 {
+  color: $safemed-blue !important;
+}
+h2.safemed-slogan {
+  color: $safemed-red !important;
+}
+
 .row.full {
   width: 100%;
   max-width: 100%;
@@ -51,16 +58,8 @@ figure.right img  {
 .image-40 {
   width: 40%;
 }
-figure {
-  border: 1px solid $base;
-  border-radius: 3px;
-  overflow: hidden;
-  margin: 0;
-  figcaption {
-    padding: 5px;
-    font-size: 0.85em;
-    font-family: "Open Sans";
-  }
+.entry-content .panel figure figcaption {
+background-color: #ddd;
 }
 .panel.with-ribbon {
   padding-bottom: 5em;

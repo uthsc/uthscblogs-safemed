@@ -2,30 +2,30 @@
     <!-- Row for main content area -->
     <div class="small-12 large-8 columns" id="content" role="main">
 
-<!--        --><?php //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-<!--        --><?php //if ($paged < 2) { ?>
-<!--        <ul class="example-orbit hide-for-small-down" data-orbit>-->
-<!--            <li>-->
-<!--                <img src="http://lorempixel.com/800/250/city/" alt="slide 1" />-->
-<!--                <div class="orbit-caption">-->
-<!--                    Caption One.-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <li class="active">-->
-<!--                <img src="http://lorempixel.com/800/250/nature/" alt="slide 2" />-->
-<!--                <div class="orbit-caption">-->
-<!--                    Caption Two.-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <img src="http://lorempixel.com/800/250/city/" alt="slide 3" />-->
-<!--                <div class="orbit-caption">-->
-<!--                    Caption Three.-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!---->
-<!--        --><?php //} ?>
+        <!--        --><?php //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+        <!--        --><?php //if ($paged < 2) { ?>
+        <!--        <ul class="example-orbit hide-for-small-down" data-orbit>-->
+        <!--            <li>-->
+        <!--                <img src="http://lorempixel.com/800/250/city/" alt="slide 1" />-->
+        <!--                <div class="orbit-caption">-->
+        <!--                    Caption One.-->
+        <!--                </div>-->
+        <!--            </li>-->
+        <!--            <li class="active">-->
+        <!--                <img src="http://lorempixel.com/800/250/nature/" alt="slide 2" />-->
+        <!--                <div class="orbit-caption">-->
+        <!--                    Caption Two.-->
+        <!--                </div>-->
+        <!--            </li>-->
+        <!--            <li>-->
+        <!--                <img src="http://lorempixel.com/800/250/city/" alt="slide 3" />-->
+        <!--                <div class="orbit-caption">-->
+        <!--                    Caption Three.-->
+        <!--                </div>-->
+        <!--            </li>-->
+        <!--        </ul>-->
+        <!---->
+        <!--        --><?php //} ?>
 
         <?php if ( have_posts() ) : ?>
 

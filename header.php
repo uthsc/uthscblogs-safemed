@@ -80,7 +80,7 @@
                         <img src="/wp-content/themes/uthscblogs-safemed/images/safemed-logo.png" alt="safemed logo"/>
                     </div>
                     <div class="columns small-8 large-12">
-                        <h2>Making sure all parts of your&nbsp;care fit&nbsp;together</h2>
+                        <h2 class="safemed-slogan">Making sure all parts of your&nbsp;care fit&nbsp;together</h2>
                     </div>
                 </div>
             </div>

@@ -272,6 +272,12 @@ ol.commentlist {
         color: $body-font-color;
       }
     }
+    .post-date {
+      font-size: 0.75rem;
+      float: right;
+      color: #666;
+      text-transform: uppercase;
+    }
   }
   ul {
     list-style-type: none;

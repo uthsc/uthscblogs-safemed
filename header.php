@@ -42,30 +42,34 @@
 
     </script>
     <!-- Favicon and Feed -->
-    <link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed"
           href="<?php echo home_url(); ?>/feed/">
     <!--  iPhone Web App Home Screen Icon -->
-    <link rel="apple-touch-icon" sizes="72x72"
-          href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-icon-ipad.png"/>
-    <link rel="apple-touch-icon" sizes="114x114"
-          href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-icon-retina.png"/>
-    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/devices/uthsc-icon.png"/>
-    <!-- Enable Startup Image for iOS Home Screen Web App -->
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/mobile-load.png"/>
-    <!-- Startup Image iPad Landscape (748x1024) -->
-    <link rel="apple-touch-startup-image"
-          href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-landscape.png"
-          media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"/>
-    <!-- Startup Image iPad Portrait (768x1004) -->
-    <link rel="apple-touch-startup-image"
-          href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-portrait.png"
-          media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)"/>
-    <!-- Startup Image iPhone (320x460) -->
-    <link rel="apple-touch-startup-image"
-          href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png"
-          media="screen and (max-device-width: 320px)"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-57x57.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-60x60.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-72x72.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-76x76.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-114x114.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-120x120.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-144x144.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-152x152.png?v=nggaAjnBdX">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/apple-touch-icon-180x180.png?v=nggaAjnBdX">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/favicon-32x32.png?v=nggaAjnBdX" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/favicon-194x194.png?v=nggaAjnBdX" sizes="194x194">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/favicon-96x96.png?v=nggaAjnBdX" sizes="96x96">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/android-chrome-192x192.png?v=nggaAjnBdX" sizes="192x192">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/favicon-16x16.png?v=nggaAjnBdX" sizes="16x16">
+    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/manifest.json?v=nggaAjnBdX">
+    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/safari-pinned-tab.svg?v=nggaAjnBdX" color="#9e0e26">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/safemed-icons/favicon.ico?v=nggaAjnBdX">
+    <meta name="apple-mobile-web-app-title" content="SafeMed">
+    <meta name="application-name" content="SafeMed">
+    <meta name="msapplication-TileColor" content="#efefef">
+    <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/safemed-icons/mstile-144x144.png?v=nggaAjnBdX">
+    <meta name="msapplication-config" content="<?php echo get_template_directory_uri(); ?>/safemed-icons/browserconfig.xml">
+    <meta name="theme-color" content="#efefef">
+
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('antialiased'); ?>>
